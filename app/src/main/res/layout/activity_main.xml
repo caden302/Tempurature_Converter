@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/Fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Fahrenheit"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/FahTextBox"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/temp"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Fahrenheit"
+        app:layout_constraintStart_toEndOf="@+id/Fahrenheit" />
+
+    <TextView
+        android:id="@+id/Celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Celsius"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/Fahrenheit" />
+
+    <EditText
+        android:id="@+id/CelTextBox"
+        android:layout_width="258dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="@string/temp"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Celsius"
+        app:layout_constraintStart_toEndOf="@id/Celsius" />
+
+    <Button
+        android:id="@+id/Convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CelTextBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
