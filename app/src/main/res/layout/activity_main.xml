@@ -25,13 +25,13 @@
 
     <EditText
         android:id="@+id/FahTextBox"
-        android:layout_width="256dp"
+        android:layout_width="100dp"
         android:layout_height="48dp"
         android:ems="10"
         android:hint="@string/temp"
         android:inputType="text"
         app:layout_constraintBaseline_toBaselineOf="@+id/Fahrenheit"
-        app:layout_constraintStart_toEndOf="@+id/Fahrenheit" />
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <TextView
         android:id="@+id/Celsius"
@@ -44,8 +44,8 @@
 
     <EditText
         android:id="@+id/CelTextBox"
-        android:layout_width="258dp"
-        android:layout_height="53dp"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:hint="@string/temp"
         android:inputType="text"
